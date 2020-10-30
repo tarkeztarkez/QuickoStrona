@@ -1,0 +1,68 @@
+// bootstrap variebles overrides
+
+$body-bg: white;
+
+$container-max-widths: (
+  sm: 420px,
+  md: 720px,
+  xl: 1350px,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "navbar";
+@import "phone";
+// element overrides
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 1000px;
+
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+  }
+}
+
+#allcontainer {
+  padding: 0px;
+}
+
+// Remove bootstrap highlight on button focus
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+// Responsive classes
+
+@include media-breakpoint-down(md) {
+  .pc {
+    display: none;
+  }
+  .mobile {
+    display: initial;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .mobile {
+    display: none;
+  }
+  .pc {
+    display: initial;
+  }
+}
+
+.quicko-gradient {
+  background: rgb(189, 24, 99);
+  background: linear-gradient(
+    90deg,
+    rgba(189, 24, 99, 1) 0%,
+    rgba(24, 2, 15, 1) 100%
+  );
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+}

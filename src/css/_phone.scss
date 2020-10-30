@@ -1,0 +1,17 @@
+// Animation stuff
+
+$cover-width: auto;
+
+.phone-containter {
+  text-align: center;
+  position: relative;
+}
+
+.phone-cover {
+  width: $cover-width;
+  height: 700px;
+
+  @media only screen and (max-width: 600px) {
+    height: 400px;
+  }
+}
