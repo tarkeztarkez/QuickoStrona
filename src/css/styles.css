@@ -10796,7 +10796,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .navbar-brand {
-  max-width: 130px;
+  max-width: 190px;
 }
 
 .btn-register {
@@ -10817,6 +10817,8 @@ a.text-dark:hover, a.text-dark:focus {
 .phone-cover-vertical {
   width: auto;
   height: 65vh;
+  position: relative;
+  top: 40px;
 }
 
 @media only screen and (max-width: 600px) {
