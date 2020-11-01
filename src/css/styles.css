@@ -10876,3 +10876,33 @@ body {
   background-repeat: no-repeat;
   color: white;
 }
+
+.buttons {
+  border-color: #a01454;
+  border-style: solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  font-size: 1.3em;
+  border-radius: 8px;
+}
+
+.buttons > .button1 {
+  border-style: none;
+  background-color: #a01454;
+  margin-right: 10px;
+  border-radius: 16px;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+.buttons > .button2 {
+  background: none;
+  border: none;
+  color: #a01454;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
