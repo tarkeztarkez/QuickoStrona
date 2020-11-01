@@ -25,6 +25,10 @@ body {
   }
 }
 
+html {
+  scroll-snap-type: y proximity;
+}
+
 #allcontainer {
   padding: 0px;
 }
@@ -91,4 +95,12 @@ body {
   color: #a01454;
   font-weight: bold;
   letter-spacing: 0.3px;
+}
+
+.snap {
+  scroll-snap-align: start;
+}
+
+.snap-end {
+  scroll-snap-align: end;
 }

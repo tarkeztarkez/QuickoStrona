@@ -10814,9 +10814,20 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
 }
 
+.phone-cover-vertical {
+  width: auto;
+  height: 65vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .phone-cover-vertical {
+    height: 400px;
+  }
+}
+
 .phone-cover {
   width: auto;
-  height: 700px;
+  height: 80vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -10838,6 +10849,11 @@ body {
   body {
     text-align: center;
   }
+}
+
+html {
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
 }
 
 #allcontainer {
@@ -10905,4 +10921,12 @@ body {
   color: #a01454;
   font-weight: bold;
   letter-spacing: 0.3px;
+}
+
+.snap {
+  scroll-snap-align: start;
+}
+
+.snap-end {
+  scroll-snap-align: end;
 }

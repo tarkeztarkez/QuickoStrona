@@ -20,6 +20,7 @@
     ></script>
     <script src="js/lib/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
       AOS.init({
         duration: 800,
@@ -29,7 +30,9 @@
     <div style="height: 20px" class="pc"></div>
 
     <!-- Navbar -->
-    <nav class="py-3 navbar navbar-expand-lg container-fluid navbar-shadow">
+    <nav
+      class="py-3 navbar navbar-expand-lg container-fluid navbar-shadow snap"
+    >
       <div class="container-xl">
         <button
           class="navbar-toggler"
@@ -78,7 +81,7 @@
 
     <!-- Content -->
     <div class="container-xl">
-      <div class="row mt-5 mb-5" style="min-height: 700px">
+      <div class="row mt-5 mb-5" style="height: 80vh">
         <div class="col-md mt-5" data-aos="fade-right" data-aos-delay="800">
           <div class="my-3 d-table-cell align-middle">
             <h1 class="h1">Rethink wallet</h1>
@@ -104,61 +107,67 @@
       </div>
     </div>
 
-    <script></script>
-
     <div class="row" style="min-height: 10vh"></div>
 
-    <div class="row py-5 mt-5 quicko-gradient">
-      <div class="container-xl">
-        <div class="row">
-          <div class="col-md mt-5 ml-2 text-center">
-            <div class="my-3">
-              <h1 class="h1">Płać wygodnie na wszystkich urządzeniach</h1>
-              <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                ad voluptas velit non cupiditate hic eos excepturi incidunt? Et,
-                dolore nisi nihil totam culpa laborum accusamus deleniti facilis
-                labore aliquid.
-              </p>
+    <section class="snap">
+      <div class="row py-5 mt-5 quicko-gradient" style="height: 100vh">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-md mt-5 ml-2 text-center" data-aos="zoom-in-down">
+              <div class="my-3">
+                <h1 class="h1">Płać wygodnie na wszystkich urządzeniach</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque ad voluptas velit non cupiditate hic eos excepturi
+                  incidunt? Et, dolore nisi nihil totam culpa laborum accusamus
+                  deleniti facilis labore aliquid.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="phone-containter">
-              <img src="./assets/mockup.svg" alt="" class="phone-cover" />
+          <div class="row">
+            <div class="col">
+              <div class="phone-containter" data-aos="fade-up">
+                <img
+                  src="./assets/mockup.svg"
+                  alt=""
+                  class="phone-cover-vertical"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="row">
-      <div class="container-xl">
-        <div class="row mt-5 mb-5 ml" style="min-height: 700px">
-          <div class="col-md mt-5 ml-2">
-            <div class="my-3 d-table-cell align-middle">
-              <h1 class="h1">PŁAĆ TAM GDZIE ZOBACZYSZ</h1>
-              <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                ad voluptas velit non cupiditate hic eos excepturi incidunt? Et,
-                dolore nisi nihil totam culpa laborum accusamus deleniti facilis
-                labore aliquid.
-              </p>
+    <section class="snap">
+      <div class="row" style="height: 100vh">
+        <div class="container-xl">
+          <div class="row mt-5 mb-5 ml" style="min-height: 700px">
+            <div class="col-md mt-5 ml-2">
+              <div class="my-3 d-table-cell align-middle">
+                <h1 class="h1">PŁAĆ TAM GDZIE ZOBACZYSZ</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque ad voluptas velit non cupiditate hic eos excepturi
+                  incidunt? Et, dolore nisi nihil totam culpa laborum accusamus
+                  deleniti facilis labore aliquid.
+                </p>
+              </div>
+              <div class="buttons">
+                <button class="button1">Płatność w aplikacji</button>
+                <button class="button2">Płatność www</button>
+              </div>
             </div>
-            <div class="buttons">
-              <button class="button1">Płatność w aplikacji</button>
-              <button class="button2">Płatność www</button>
-            </div>
-          </div>
-          <div class="col">
-            <div class="phone-containter">
-              <img src="./assets/mockup.svg" alt="" class="phone-cover" />
+            <div class="col">
+              <div class="phone-containter">
+                <img src="./assets/mockup.svg" alt="" class="phone-cover" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <script defer src="js/navbar-shadow.js"></script>
     <script defer src="js/carousel-animation.js"></script>
