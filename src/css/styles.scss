@@ -24,6 +24,14 @@ body {
     text-align: center;
   }
 }
+@media only screen and (max-width: 600px) {
+  .h1 {
+    text-align: center;
+  }
+  .lead {
+    text-align: center;
+  }
+}
 
 html {
   scroll-snap-type: y proximity;
@@ -78,6 +86,10 @@ html {
   padding: 10px;
   font-size: 1.3em;
   border-radius: 8px;
+  @media only screen and (max-width: 600px) {
+    text-align: center;
+    justify-content: center;
+  }
 }
 .buttons > .button1 {
   border-style: none;

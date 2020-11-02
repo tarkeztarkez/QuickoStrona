@@ -10811,13 +10811,11 @@ a.text-dark:hover, a.text-dark:focus {
 
 .phone-containter {
   text-align: center;
-  position: relative;
 }
 
 .phone-cover-vertical {
   width: auto;
   height: 65vh;
-  position: relative;
   top: 40px;
 }
 
@@ -10850,6 +10848,15 @@ body {
 
 @media only screen and (max-width: 600px) {
   body {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .h1 {
+    text-align: center;
+  }
+  .lead {
     text-align: center;
   }
 }
@@ -10905,6 +10912,15 @@ html {
   padding: 10px;
   font-size: 1.3em;
   border-radius: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  .buttons {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .buttons > .button1 {
