@@ -9,7 +9,11 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
@@ -20,6 +24,10 @@
     ></script>
     <script src="js/lib/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
     <script>
       AOS.init({
@@ -168,20 +176,36 @@
                 <button class="button2">Płatność www</button>
               </div>
             </div>
-            <div class="col">
-              <div class="phone-containter">
-                <img
-                  src="./assets/mockup.svg"
-                  alt=""
-                  class="phone-cover"
-                  data-aos="fade-left"
-                />
+            <div class="col-6 d-flex justify-content-center">
+              <div class="phone-containter-slider slider" data-aos="fade-left">
+                <img src="./assets/qr/qr_1.png" alt="" class="phone-cover" />
+                <img src="./assets/qr/qr_2.png" alt="" class="phone-cover" />
+                <img src="./assets/qr/qr_3.png" alt="" class="phone-cover" />
+                <img src="./assets/qr/qr_4.png" alt="" class="phone-cover" />
+                <img src="./assets/qr/qr_5.png" alt="" class="phone-cover" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slider").slick({
+          fade: true,
+          infinite: true,
+          autoplay: true /* this is the new line */,
+          arrows: false,
+          autoplaySpeed: 2000,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoWidth: true,
+          variebleHeight: true,
+          centerMode: true,
+        });
+      });
+    </script>
 
     <script defer src="js/navbar-shadow.js"></script>
     <script defer src="js/carousel-animation.js"></script>

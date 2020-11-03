@@ -6,6 +6,16 @@ $cover-width: auto;
   text-align: center;
 }
 
+.phone-containter-slider {
+  max-height: 65vh;
+  width: auto;
+  max-width: 30vh;
+
+  @media only screen and (max-width: 600px) {
+    height: 400px !important;
+  }
+}
+
 .phone-cover-vertical {
   width: $cover-width;
   height: 65vh;
@@ -15,13 +25,12 @@ $cover-width: auto;
     height: 400px;
   }
 }
-
 .phone-cover {
   width: $cover-width;
-  height: 65vh;
-  margin-top: 50px;
+  max-height: 65vh;
+  width: auto;
 
   @media only screen and (max-width: 600px) {
-    height: 400px;
+    height: 400px !important;
   }
 }
