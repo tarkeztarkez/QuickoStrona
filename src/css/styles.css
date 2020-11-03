@@ -10820,13 +10820,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media only screen and (max-width: 600px) {
   .phone-containter-slider {
-    height: 400px;
+    height: 400px !important;
   }
 }
 
 .phone-containter-slider-vertical {
   max-height: 65vh;
-  max-width: 35vh;
+  max-width: 30vh;
   top: 40px;
 }
 
@@ -10853,7 +10853,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media only screen and (max-width: 600px) {
   .phone-cover {
-    height: 400px;
+    height: 400px !important;
   }
 }
 

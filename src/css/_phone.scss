@@ -11,12 +11,12 @@ $cover-width: auto;
   max-width: 30vh;
 
   @media only screen and (max-width: 600px) {
-    height: 400px;
+    height: 400px !important;
   }
 }
 .phone-containter-slider-vertical {
   max-height: 65vh;
-  max-width: 35vh;
+  max-width: 30vh;
   top: 40px;
 
   @media only screen and (max-width: 600px) {
@@ -36,6 +36,6 @@ $cover-width: auto;
   max-height: 65vh;
 
   @media only screen and (max-width: 600px) {
-    height: 400px;
+    height: 400px !important;
   }
 }
