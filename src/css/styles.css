@@ -10815,20 +10815,29 @@ a.text-dark:hover, a.text-dark:focus {
 
 .phone-containter-slider {
   max-height: 65vh;
-  width: auto;
   max-width: 30vh;
-  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
   .phone-containter-slider {
-    height: 400px !important;
+    height: 400px;
+  }
+}
+
+.phone-containter-slider-vertical {
+  max-height: 65vh;
+  max-width: 35vh;
+  top: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .phone-containter-slider-vertical {
+    height: 400px;
   }
 }
 
 .phone-cover-vertical {
-  width: auto;
-  height: 65vh;
+  max-height: 65vh;
   top: 40px;
 }
 
@@ -10839,14 +10848,12 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .phone-cover {
-  width: auto;
   max-height: 65vh;
-  width: auto;
 }
 
 @media only screen and (max-width: 600px) {
   .phone-cover {
-    height: 400px !important;
+    height: 400px;
   }
 }
 

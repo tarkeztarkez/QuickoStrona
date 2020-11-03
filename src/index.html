@@ -90,7 +90,7 @@
     <!-- Content -->
     <div class="container-xl">
       <div class="row mt-5 mb-5" style="min-height: 80vh">
-        <div class="col-md mt-5" data-aos="fade-right" data-aos-delay="800">
+        <div class="col-md-6 mt-5" data-aos="fade-right" data-aos-delay="800">
           <div class="my-3 d-table-cell align-middle">
             <h1 class="h1">Rethink wallet</h1>
             <p class="lead">
@@ -103,7 +103,7 @@
           <img src="assets/googleplay.png" alt="" class="lead mb-4" />
           <img src="assets/appstore.png" alt="" class="lead mb-4" />
         </div>
-        <div class="col">
+        <div class="col-6">
           <div
             class="phone-containter"
             data-aos="fade-left"
@@ -143,11 +143,24 @@
             </div>
           </div>
           <div class="row">
-            <div class="col">
-              <div class="phone-containter" data-aos="fade-up">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="phone-containter-slider-vertical" data-aos="fade-up">
                 <img
-                  src="./assets/mockup.svg"
+                  src="./assets/fitness/fitness_1.png"
                   alt=""
+                  srcset=""
+                  class="phone-cover-vertical"
+                />
+                <img
+                  src="./assets/fitness/fitness_2.png"
+                  alt=""
+                  srcset=""
+                  class="phone-cover-vertical"
+                />
+                <img
+                  src="./assets/fitness/fitness_3.png"
+                  alt=""
+                  srcset=""
                   class="phone-cover-vertical"
                 />
               </div>
@@ -198,6 +211,20 @@
           autoplay: true /* this is the new line */,
           arrows: false,
           autoplaySpeed: 2000,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoWidth: true,
+          variebleHeight: true,
+          centerMode: true,
+        });
+      });
+      $(document).ready(function () {
+        $(".phone-containter-slider-vertical").slick({
+          fade: true,
+          infinite: true,
+          autoplay: true /* this is the new line */,
+          arrows: false,
+          autoplaySpeed: 1000,
           slidesToShow: 1,
           slidesToScroll: 1,
           autoWidth: true,

@@ -8,17 +8,24 @@ $cover-width: auto;
 
 .phone-containter-slider {
   max-height: 65vh;
-  width: auto;
   max-width: 30vh;
 
   @media only screen and (max-width: 600px) {
-    height: 400px !important;
+    height: 400px;
+  }
+}
+.phone-containter-slider-vertical {
+  max-height: 65vh;
+  max-width: 35vh;
+  top: 40px;
+
+  @media only screen and (max-width: 600px) {
+    height: 400px;
   }
 }
 
 .phone-cover-vertical {
-  width: $cover-width;
-  height: 65vh;
+  max-height: 65vh;
   top: 40px;
 
   @media only screen and (max-width: 600px) {
@@ -26,11 +33,9 @@ $cover-width: auto;
   }
 }
 .phone-cover {
-  width: $cover-width;
   max-height: 65vh;
-  width: auto;
 
   @media only screen and (max-width: 600px) {
-    height: 400px !important;
+    height: 400px;
   }
 }
