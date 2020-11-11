@@ -104,11 +104,7 @@
           <img src="assets/appstore.png" alt="" class="lead mb-4" />
         </div>
         <div class="col-6">
-          <div
-            class="phone-containter"
-            data-aos="fade-left"
-            data-aos-delay="800"
-          >
+          <div class="phone" data-aos="fade-left" data-aos-delay="800">
             <video
               width="1000"
               height="9000"
@@ -144,7 +140,7 @@
           </div>
           <div class="row">
             <div class="col-12 d-flex justify-content-center">
-              <div class="phone-containter-slider-vertical" data-aos="fade-up">
+              <div class="phone" data-aos="fade-up" id="fitness-slider">
                 <img
                   src="./assets/fitness/fitness_1.png"
                   alt=""
@@ -169,6 +165,22 @@
         </div>
       </div>
     </section>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#fitness-slider").slick({
+          fade: true,
+          infinite: true,
+          autoplay: true /* this is the new line */,
+          arrows: false,
+          autoplaySpeed: 2000,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoWidth: true,
+          variebleHeight: true,
+          centerMode: true,
+        });
+      });
+    </script>
 
     <section class="snap">
       <div class="row" style="height: 100vh">
@@ -190,7 +202,7 @@
               </div>
             </div>
             <div class="col-6 d-flex justify-content-center">
-              <div class="phone-containter-slider slider" data-aos="fade-left">
+              <div class="phone" data-aos="fade-left" id="qr-slider">
                 <img src="./assets/qr/qr_1.png" alt="" class="phone-cover" />
                 <img src="./assets/qr/qr_2.png" alt="" class="phone-cover" />
                 <img src="./assets/qr/qr_3.png" alt="" class="phone-cover" />
@@ -205,26 +217,12 @@
 
     <script type="text/javascript">
       $(document).ready(function () {
-        $(".slider").slick({
+        $("#qr-slider").slick({
           fade: true,
           infinite: true,
           autoplay: true /* this is the new line */,
           arrows: false,
           autoplaySpeed: 2000,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoWidth: true,
-          variebleHeight: true,
-          centerMode: true,
-        });
-      });
-      $(document).ready(function () {
-        $(".phone-containter-slider-vertical").slick({
-          fade: true,
-          infinite: true,
-          autoplay: true /* this is the new line */,
-          arrows: false,
-          autoplaySpeed: 1000,
           slidesToShow: 1,
           slidesToScroll: 1,
           autoWidth: true,

@@ -1,41 +1,23 @@
+@media only screen and (max-width: 600px) {
+  $phone-height: 400px;
+}
+
+$phone-height: 600px;
+$phone-width: calc(600px / 2);
+
 // Animation stuff
-
-$cover-width: auto;
-
-.phone-containter {
-  text-align: center;
+.phone video {
+  width: $phone-width;
+  height: $phone-height;
 }
 
-.phone-containter-slider {
-  max-height: 65vh;
-  max-width: 30vh;
-
-  @media only screen and (max-width: 600px) {
-    height: 400px !important;
-  }
-}
-.phone-containter-slider-vertical {
-  max-height: 65vh;
-  max-width: 30vh;
-  top: 40px;
-
-  @media only screen and (max-width: 600px) {
-    height: 400px;
-  }
+.phone {
+  height: $phone-height;
+  width: $phone-width;
+  margin: 0 auto;
 }
 
-.phone-cover-vertical {
-  max-height: 65vh;
-  top: 40px;
-
-  @media only screen and (max-width: 600px) {
-    height: 400px;
-  }
-}
-.phone-cover {
-  max-height: 65vh;
-
-  @media only screen and (max-width: 600px) {
-    height: 400px !important;
-  }
+.phone img {
+  height: $phone-height;
+  width: $phone-width;
 }
