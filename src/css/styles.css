@@ -10823,6 +10823,7 @@ a.text-dark:hover, a.text-dark:focus {
 .phone img {
   height: 600px;
   width: calc(600px / 2);
+  margin: 0 auto;
 }
 
 * {

@@ -20,4 +20,5 @@ $phone-width: calc(600px / 2);
 .phone img {
   height: $phone-height;
   width: $phone-width;
+  margin: 0 auto;
 }
