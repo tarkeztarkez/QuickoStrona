@@ -20,11 +20,11 @@ $container-max-widths: (
 body {
   min-height: 1000px;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 991px) {
     text-align: center;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 991px) {
   .h1 {
     text-align: center;
   }
@@ -86,7 +86,7 @@ html {
   padding: 10px;
   font-size: 1.3em;
   border-radius: 8px;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 991px) {
     text-align: center;
     justify-content: center;
   }
